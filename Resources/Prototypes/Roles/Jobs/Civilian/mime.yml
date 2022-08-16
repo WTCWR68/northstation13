@@ -3,6 +3,7 @@
   name: job-name-mime
   playTimeTracker: JobMime
   startingGear: MimeGear
+  setPreference: false
   icon: "Mime"
   supervisors: job-supervisors-hop
   access:
