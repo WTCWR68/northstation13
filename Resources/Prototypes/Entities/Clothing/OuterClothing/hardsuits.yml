@@ -12,16 +12,16 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 10000
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.9
-        Heat: 0.2
-        Radiation: 0.25
+        Heat: 0.001
+        Radiation: 0
   - type: TemperatureProtection
     coefficient: 0.001
   - type: ExplosionResistance
@@ -43,8 +43,8 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: ClothingSpeedModifier
-    walkModifier: 0.8
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: Armor
     modifiers:
       coefficients:
@@ -72,8 +72,8 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: Armor
     modifiers:
       coefficients:
@@ -83,7 +83,7 @@
         Heat: 0.2
         Radiation: 0.2
   - type: ExplosionResistance
-    damageCoefficient: 0.7
+    damageCoefficient: 0.1
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
 
@@ -101,16 +101,16 @@
     highPressureMultiplier: 0.04
     lowPressureMultiplier: 1000
   - type: ClothingSpeedModifier
-    walkModifier: 0.65
-    sprintModifier: 0.65
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
         Slash: 0.85
         Piercing: 0.85
-        Heat: 0.7
-        Radiation: 0.35
+        Heat: 0.001
+        Radiation: 0
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ToggleableClothing
@@ -130,16 +130,16 @@
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.8
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.85
         Slash: 0.85
         Piercing: 0.8
-        Heat: 0.4
-        Radiation: 0.25
+        Heat: 0.001
+        Radiation: 0
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ToggleableClothing
@@ -245,11 +245,11 @@
         Blunt: 0.6
         Slash: 0.75
         Piercing: 0.95
-        Heat: 0.65
-        Radiation: 0.25
+        Heat: 0.35
+        Radiation: 0.1
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.3
   - type: ToggleableClothing
@@ -257,6 +257,7 @@
   - type: StaticPrice
     price: 750
 
+#This will be removed in exchange for a new suit entirely so im leaving it for now.
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitSalvage
@@ -427,7 +428,7 @@
     damageCoefficient: 0.2
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitLing
-
+#This will also be removed pending a new suit
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitSpatio
@@ -481,7 +482,7 @@
         Slash: 0.95
         Heat: 0.90
         Radiation: 0.75
-
+#This will probably be removed because i want to discourage people going down the machinegun juggernaut route and being more infiltration based, might even make it nukie only.
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitJuggernaut
@@ -534,7 +535,7 @@
         Slash: 0.4
         Piercing: 0.3
         Heat: 0.3
-        Radiation: 0.20
+        Radiation: 0.1
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: ToggleableClothing
@@ -564,13 +565,14 @@
         Blunt: 0.5
         Slash: 0.5
         Piercing: 0.4
-        Heat: 0.2
-        Radiation: 0.20
+        Heat: 0
+        Radiation: 0
   - type: ExplosionResistance
     damageCoefficient: 0.3
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
 
+#Probably gonna remove zombies for favour of less bastard (conversion mechanic) antags, revs and cult are enough.
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitCBURN
@@ -588,7 +590,7 @@
     walkModifier: 1.0
     sprintModifier: 1.0
   - type: TemperatureProtection
-    coefficient: 0.001    
+    coefficient: 0.001
   - type: Armor
     modifiers:
       coefficients:
@@ -629,7 +631,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertengineer.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
-    
+
 - type: entity
   parent: ClothingOuterHardsuitERTLeader
   id: ClothingOuterHardsuitERTMedical
@@ -653,7 +655,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertsecurity.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTSecurity
-    
+
 - type: entity
   parent: ClothingOuterHardsuitERTLeader
   id: ClothingOuterHardsuitERTJanitor
