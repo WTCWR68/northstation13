@@ -3,6 +3,7 @@
   name: job-name-clown
   playTimeTracker: JobClown
   startingGear: ClownGear
+  setPreference: false
   icon: "Clown"
   supervisors: job-supervisors-hop
   access:
